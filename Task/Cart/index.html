@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <center>
+    <section class="border">
+    <section class="heading">
+        <h1>CART</h1>
+    </section>
+
+    <section class="item item-1">
+        <img src="IMAGES/757892_AACAG_9055_002_100_0000_Light-Mens-Gucci-Ace-sneaker-with-Web.avif" alt="">
+    </section>
+
+    <p>Men's Gucci Ace sneaker with Web</p>
+
+    <input type="text"  id="price" readonly value="67500">
+
+    <br><br>
+
+    &#8377; <del>75,000</del>
+
+    <br>
+
+    <input type="number" id="qty" value="1" min="1" max="9"  onchange="total()">
+
+    <br>
+
+    <p class="off">10% OFF</p>
+
+    <label id="total">total=67,500</label>
+
+    
+    </section>
+    </center>
+
+    <script>
+        function total()
+{
+  var p=document.getElementById("price").value;
+
+  var q=document.getElementById("qty").value;
+
+  var sub =p*q;
+  document.getElementById("total").innerHTML= "TOTAL=₹"+sub;
+
+  //--------------------------------------------------------------------------------------------------------------- 
+  
+} 
+
+  // 10%off
+
+  function off()
+  {
+    var p = document.getElementById("price").value;
+    var q= document.getElementById("qty").value;
+     
+    var sub=p*q;
+    var t=sub/10;
+    var off =sub-t ;
+  document.getElementById("off").innerHTML="₹"+off;
+  }
+
+    </script>
+</body>
+</html>

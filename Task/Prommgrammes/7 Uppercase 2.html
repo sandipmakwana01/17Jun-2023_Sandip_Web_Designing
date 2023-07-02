@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</style>
+</head>
+<body>
+
+<h2 > Converted in Uppercase</h2>
+<input onblur="demo()" id="text" type="text">
+<div></div>
+<p id="demo"></p>
+
+<script>
+function demo(){
+var a = document.getElementById("text").value;
+document.getElementById("demo").innerHTML = a ;
+document.getElementById("demo").style="text-transform: uppercase; "
+
+}
+</script>
+
+</body>
+</html> 

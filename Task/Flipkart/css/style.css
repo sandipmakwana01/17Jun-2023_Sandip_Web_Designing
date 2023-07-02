@@ -1,0 +1,280 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid ; */
+    text-decoration: none;
+}
+
+
+
+
+#search {
+    display: flex;
+    max-height: 5.5vh;
+    width: 100%;
+    align-items: center;
+}
+
+.log{
+    margin: 0 auto;
+}
+
+.searchbox{
+    margin: 0 0 0 0;
+    width:25%;
+}
+.searchbox input{
+    border-radius: 1px;
+    border: transparent;
+    border-bottom: 1.5px solid rgb(142, 139, 139);
+    width: 100%;
+}
+.searchicon{
+    margin: 10px auto 0 0;
+}
+
+
+
+.socialmedia{
+    display: flex;
+    margin: 0 auto;
+}
+.socialmedia img{
+    width: 30px;
+    margin: 0 15px;
+}
+.insta img{
+    margin-top: 0.5vh;
+    width: 25px;
+}
+.twit img{
+    margin-top: 0.5vh;
+    width: 25px;
+}
+.google img{
+    width: 22px;
+    margin-top: 0.7vh;
+}
+
+
+
+
+.cart {
+    
+    margin: 0 0 0 0;
+}
+.cartimg{
+    
+    margin: 0 auto 0 0;
+}
+.cartimg img{
+    width:25px;
+}
+
+
+
+#header{
+    box-shadow:  0px 0px 4px black;
+    background-color: rgb(40, 116, 240);
+    display: flex;
+    justify-content: center;
+    min-height: 10vh;
+    align-items: center;
+    width: 100%;
+    
+}
+.cart a{
+    color: rgb(40, 116, 240);
+    font-weight:bolder;
+}
+#header a{
+    color: white;
+    text-decoration: none;
+}
+.shopname{
+    margin: 0 auto 0 0;
+}
+.basket{
+    margin: 0 0 0 auto;
+}
+#header ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu{
+    margin: 0 auto;
+}
+.menu ul li a{
+    margin: 0 30px;
+}
+
+#slider img{
+    width: 100%;
+    box-shadow: 0px 0px 2px  black;
+}
+
+#content{
+    margin: auto;
+    width: 97%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4);
+
+    grid-gap:20px;
+
+}
+.row1{
+    display: grid;
+
+    grid-column: 1/4;
+    grid-row: 1/2;
+    /* grid-gap: 10px; */
+}
+.row1item1{
+    background-color:rgb(223, 223, 223);
+    /* border: 2px solid; */
+    box-shadow: 0px 0px 1px black;
+    grid-row: 1/2;
+    grid-column: 1/4;
+}
+.row1item2{
+    border: 1px solid;
+    border-right: none;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.item1imge img{
+    width: 60%;
+    
+}
+.itme1{
+    text-align: center;
+    width: 100%;
+    /* margin:  5px -2px 5px 2px;    */
+    padding-top: 15px;
+}
+.item1imge :hover{
+    box-shadow: 0px 0px 2px black;
+    transition: 0.8s;
+    transform: scale(1.07);
+
+}
+
+.item1imge span{
+    margin: 0 auto;
+}
+.row1item3{
+    border: 1px solid;
+    border-left: none;
+    border-right: none;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.row1item4{
+    border: 1px solid;
+    border-left:none ;
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+.row1item5{
+    border: 1px solid;
+    grid-row: 2/3;
+    grid-column: 4/5;
+    border-left: none;
+}
+.border{
+    border-right:none;
+}
+.row1item6{
+    border: 2px solid;
+}
+
+.dynamic{
+    float: left;
+    margin: 10px 0 0 10px;
+}
+.best{
+    float: left;
+    margin: 0 0 10px 0;
+}
+.view{
+    float: right;
+    margin: 15px 15px 0 0;
+    padding: 5px;
+}
+.row2{
+    display: grid;
+    grid-column: 1/5;
+    grid-row: 2/3;
+}
+.row2 .row1item1{
+    grid-row: 1/2;
+    grid-column: 1/5;
+}
+
+.row3{
+    grid-column: 1/5;
+    grid-row: 3/4;
+    display: grid;
+}
+.row3 .row1item1{
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+.row4{
+    grid-column: 1/5;
+    grid-row: 4/5;
+    display: grid;
+}
+.row4 .row1item1{
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+.row5{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.row5 img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 2px black;
+}
+
+#footer{
+    margin-top: 10px;
+    display: grid;
+    background: rgb(19, 19, 55);
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat(2 );
+    color: white;
+}
+
+.f5{
+    grid-column: 1/5;
+    grid-row: 2/3;
+    text-align: center;
+    border-top: 1px solid rgb(26, 50, 100);
+}
+.foot{
+    /* border: 2px solid white; */
+    padding: 15px;
+}
+.bar{
+    /* background-color: white; */
+    width: 40px;
+    height: auto;
+    text-align: center;
+    margin: 10px;
+    /* border-radius: 11px; */
+    padding-top: 3px;
+}
+.bar img{
+    width: 80%;
+    /* color: white; */
+}
+
+

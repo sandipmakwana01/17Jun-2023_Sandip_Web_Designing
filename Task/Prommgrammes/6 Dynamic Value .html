@@ -1,0 +1,28 @@
+<!-- w.a.p to find dynamic name take input from users -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Value</title>
+    <script>
+        function DN()
+        {
+            var nm = document.getElementById("name").value;
+
+            document.getElementById("result").innerHTML =nm ;
+        }
+    </script>
+</head>
+<body>
+    <h1>Dynamic Value</h1>
+    <label for="">Enter a text:</label>
+    <input type="text" name="" id="name" required>
+    <br>
+    <br>
+    <button onclick="DN()">Submit</button>
+    <br><br>
+    <div id="result"></div>
+    
+</body>
+</html>
