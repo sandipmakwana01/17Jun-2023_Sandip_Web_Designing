@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: auto;
+    width: 80%;
+    margin-top: 20px;
+    border: 5px black;
+    border-style: groove;
+    /* padding: 10px; */
+
+}
+
+.button{
+    display: flex;
+    justify-content:  space-evenly;
+    margin: auto;
+    width: 20%
+    
+}
+button {
+    margin: 10px;
+    padding: 5px;
+    border: transparent;
+    background: rgb(240, 96, 96);
+    color:white;
+    border: 5px double white;
+}
+
+.exit button{
+    border: transparent;
+    background: rgb(240, 96, 96);
+    color:white;
+    border: 5px double white;
+    width: auto;
+    float: right;
+    margin: 2px;
+    padding: 5px;
+
+}
+ h2{
+    margin: 10px;
+    color: rgb(199, 16, 16);
+    
+}
+p{
+    margin: 10px;
+}

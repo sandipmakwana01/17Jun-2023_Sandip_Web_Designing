@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="exit">
+        <a href="../All Question/index.html"><button>X</button></a>
+    </div>
+    <div class="question">
+        <h2>Question 2 : What is the use of isNaN function?</h2>
+        <hr>
+        <p> 
+            The isNaN() function in JavaScript is used to determine whether a value is "Not-a-Number" (NaN). It takes a single argument and returns a boolean value indicating whether the argument is NaN or not. <br><br>
+            If the argument is not a number, or it cannot be converted to a number, the function returns `true`. This includes values like NaN, strings that cannot be parsed as numbers, and non-numeric values. <br><br>
+
+            If the argument is a valid number or a string representing a numeric value, the function returns `false`.
+            <br><br>
+            ex: <br> console.log(isNaN(42));         // Output: false <br>
+            console.log(isNaN('42'));       // Output: false <br>
+            console.log(isNaN('Hello'));    // Output: true <br>
+            console.log(isNaN(NaN));        // Output: true <br>
+            console.log(isNaN(true));       // Output: false (1 is considered a number) <br>
+            console.log(isNaN(undefined));  // Output: true <br>
+        </p>
+        
+       
+    </div>
+   
+    <hr>
+    <div class="button">
+        <a href="../Question 1/index.html"><button>Back</button></a>
+        <a href="../Question 3/index.html"><button>Next</button></a>
+    </div>
+</body>
+</html>
