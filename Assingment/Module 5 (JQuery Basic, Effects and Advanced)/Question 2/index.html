@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <style>
+        body{
+            height: auto;
+            width: 90%;
+            margin: auto;
+            background-color: white;
+            border: 2px solid;
+        }
+        html{
+            background-color: rgb(151, 99, 99);
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery ,
+        JQuery Animation?</h1>
+
+    <h2>1. CSS USING jQuery.</h2>
+    <div class="q1">
+        jQuery(document).ready(function(){ <br>
+            jQuery(".q1").css({"width":"50%","height":"auto","background-color":"rgb(212, 158, 237)","padding":"20px", "margin":"10px" , "border":"2px solid"}); <br>
+            });
+    </div>
+
+    <h2>2. ADDING CLASS USING jQuery.</h2>
+    <div class="q2">
+        jQuery(document).ready(function(){ <br>
+            jQuery(".q2").addClass("header"); <br>
+            });
+    </div>
+
+    <h2>3. REMOVNG CLASS USING jQuery.</h2>
+    <div class="q3">
+        jQuery(document).ready(function(){ <br>
+            jQuery("#btn").click(function(){ <br>
+                jQuery(".q3").remove();
+            }); <br>
+        });
+    </div>
+    <button id="btn">
+         CLICK TO REMOVE
+    </button>
+
+    <h2>4. ADDING ANIMATION USING jQuery.</h2>
+    <div class="q4">
+        
+    </div>
+    <button id="btn2">
+         CLICK TO ANIMATION
+    </button>
+    
+    <script>
+        jQuery(document).ready(function(){
+        jQuery(".q1").css({"width":"auto","height":"auto","background-color":"rgb(212, 158, 237)","padding":"20px", "margin":"10px" , "border":"2px solid"});
+        });
+
+        jQuery(document).ready(function(){
+        jQuery(".q2").addClass("header");
+        jQuery(".q2").css({"width":"auto","height":"auto","background-color":"rgb(112, 158, 237)","padding":"20px", "margin":"10px" , "border":"2px solid"});
+        });
+
+        jQuery(document).ready(function(){
+        jQuery("#btn").click(function(){
+            jQuery(".q3").remove();
+        });
+        jQuery(".q3").css({"width":"auto","height":"auto","background-color":"rgb(283, 229, 98)","padding":"20px", "margin":"10px" , "border":"2px solid"});
+        jQuery("#btn").css({"background-color":"rgb(283, 229, 98)","margin":"10px","margin-left":"25%","width":"50%","height":"30px"});
+        });
+
+        jQuery(document).ready(function(){
+
+            jQuery(".q4").css({"width":"20%","height":"80px","background-color":"rgb(183, 229, 98)","padding":"20px", "margin":"10px" , "border":"2px solid"});
+
+            jQuery("#btn2").css({"background-color":"rgb(183, 229, 98)","margin":"10px","margin-left":"25%","width":"50%","height":"30px"});
+
+            jQuery("#btn2").click(function(){
+                jQuery(".q4").animate({
+                height: '80px',
+                width: '50%'
+                });
+            });
+        });
+
+    
+    </script>
+</body>
+</html>

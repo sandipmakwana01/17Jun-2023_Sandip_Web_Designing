@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Question 3 </title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $("img").css({"height":"60vh","width":"99%","margin":"10px"});
+            // $("#images").cycle("fade");
+            // $("#images").cycle("turnRight");
+            // $("#images").cycle("shuffle");
+            $("#images").cycle("zoom");
+            $("#q3").cycle("zoom");
+        });
+    </script>
+</head>
+<body style="background-color: rgb(255, 255, 255);">
+    <div id="q3">
+        <h1 style="margin: auto; width: 40%;">Create slider with animation.</h1>
+    </div>
+    
+    <div id="images">
+        <img src="images/img1.jpg" alt="">
+        <img src="images/img2.jpg" alt="">
+        <img src="images/img3.jpg" alt="">
+        <img src="images/img4.jpg" alt="">
+    </div>
+</body>
+</html>

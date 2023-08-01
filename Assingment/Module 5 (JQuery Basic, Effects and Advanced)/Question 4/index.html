@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=\, initial-scale=1.0">
+  <title>Question 4</title>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+  <style>
+    ul li{
+        list-style: none;
+    }
+  </style>
+  
+</head>
+<body>
+  <div id="main">
+    <div id="body">Body (great-great-grandparent) 
+      <div id="div">div(great-grandparent)
+        <ul id="ul"> 
+          ul (grandparent)
+          <li id="li">
+            li (direct parent)
+             <div id="span">span</div> 
+          </li>
+        </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function(){
+
+      $("#main *").css({"color":"red","border":"2px solid red","margin":"15px","padding":"5px", });
+      $("#div").css({"width":"500px"}); 
+      $("#main").css({"border":"2px solid red"});
+      $("#span").css({"color":"gray","border":" 2px solid gray" });
+
+
+      $("#body").click(function(){
+        alert("This is great great grandparent.");
+      });
+      
+      $("#div").click(function(){
+        alert("This is great- Grandparent");
+      }); 
+
+
+      $("#ul").click(function(){
+        alert("This is Grandparent");
+      });
+
+
+      $("#li").click(function(){
+        alert("This is direct parent");
+      });
+
+
+      $("#span").click(function(){
+        alert("This is span");
+      });
+    });
+  
+  </script>
+</body>
+</html>
+
+
