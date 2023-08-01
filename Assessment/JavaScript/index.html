@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assessment</title>
+    <style>
+        body{
+            width: 50%;
+            height: auto;
+            margin: auto;
+        }
+        ol{
+            background: white;
+        }
+        section{
+            background-color: rgb(25, 16, 66);
+            padding: 10px;
+            width: 100%;
+        }
+        input{
+            padding: 10px;
+            width: 60%;
+            border: none;
+        }
+        button{
+            padding: 10px;
+            width: 30%;
+            background-color: orange;
+            border: none;
+            margin-left: 30px;
+        }
+        li{
+            background-color: white;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <input type="text" id="newTodo" placeholder="add new">
+        <button id="addButton">Add</button>
+        <ol id="todoList">
+
+        </ol>
+    </section>
+
+    <script>
+        function addTodo() {
+            const newTodoInput = document.getElementById('newTodo');
+            const todoList = document.getElementById('todoList');
+
+            const newTodoText = newTodoInput.value.trim();
+
+            if (newTodoText !== '') {
+                const newTodoItem = document.createElement('li');
+                newTodoItem.textContent = newTodoText;
+
+                todoList.appendChild(newTodoItem);
+
+                newTodoInput.value = '';
+
+            }
+        }   
+
+        document.getElementById('addButton').addEventListener('click', addTodo);
+
+    </script>
+</body>
+</html>
