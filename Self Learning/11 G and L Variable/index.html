@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global And Local Variable</title>
+</head>
+<body>
+    <script>
+        var a = "Global Variable <br>";
+        document.write(a);//<------Work outside a Function (Global)
+
+        function hello(){
+            document.write(a); //<------Work inside a Function (Global)
+
+            var b = "Local Variable <br>";
+            document.write(b); //<------Work Only in Inside a Function (Local)
+
+        };
+        hello();
+        
+        document.write(b); //<------ Not Work outside a Function (Local)
+
+    </script>
+</body>
+</html>

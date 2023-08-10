@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        button{
+            padding: 8px;
+            background: #ee8484;
+        }
+        </style>
+</head>
+<!-- WINDOW EVENTS -->
+<body onload="f1()" onunload="f1()" onresize="f1()" onscroll="f1()">
+    <!-- CLICK EVENTS -->
+    <button onclick="f1()">onlick</button>
+    <button ondblclick="f1()">ondbllick</button>
+    <button oncontextmenu="f1()">oncontextmenu (rightclick)</button>
+    <br>
+    <!-- KEY EVENTS -->
+    <button onkeypress="f1()">onkeypress</button>
+    <button onkeyup="f1()">onkeyup</button>
+    <button onkeydown="f1()">onkeydown</button>
+    <br>
+    <!-- MOUSE EVENTS -->
+    <button onmouseenter="f1()">onmouseenter</button>
+    <!-- <button onmouseover="f1()">onmouseover</button> -->
+    <button onmouseout="f1()">onmouseout</button>
+    <!-- <button onmouseleave="f1()">onmouseleave</button> -->
+    <button onmouseup="f1()">onmouseup</button>
+    <button onmousedown="f1()">onmousedown</button>
+    <Script>
+        function f1(){
+            alert("Done");
+        }
+    </Script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+document.write("External Java Script File Apply in Head");
